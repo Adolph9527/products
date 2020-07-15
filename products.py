@@ -11,4 +11,4 @@ print(products)
 
 with open('products.csv', 'w') as f:
 	for p in products:
-		f.write(p[0] + ',' + str(p[1]) + '\n')  # price is integer now, and should cast to string
+		f.write(p[0] + ',' + str(p[1]) + '\n')  # price is integer now, and should be casted to string
