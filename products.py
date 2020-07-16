@@ -9,6 +9,7 @@ while True:
 print(products)
 
 
-with open('products.csv', 'w') as f:
+with open('products.csv', 'w', encoding='utf8') as f:  #encoding
+	f.write('名稱,價格\n')
 	for p in products:
 		f.write(p[0] + ',' + str(p[1]) + '\n')  # price is integer now, and should be casted to string
